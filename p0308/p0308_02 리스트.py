@@ -8,7 +8,7 @@ num_list[0] = 'A'
 num_list[10] = 'J'
 num_list[11] = 'Q'
 num_list[12] = 'K'
-
+print(num_list)
 # 카드 1 세트를 생성해보세요
 
 card_list = [[0]*2 for i in range(52)]
