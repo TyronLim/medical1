@@ -21,11 +21,14 @@ def card_share(cnt):
         card_five[cnt] = card_shake[cnt]
         cnt += 1
     print('뽑은 카드는 : ',card_five)
-    print('카드 순번은 :',cnt)
+    print('남은 카드 수는 :',52 - cnt)
     return cnt
 
 def card_print():
     print('뽑은 숫자는 : ',card_five)
+    
+
+
 
 card_shape = ['SPADE', 'DIAMOND', 'HEART', 'CLOVER']
 card_num = [i for i in range(1,14)]
@@ -34,8 +37,8 @@ card_num[10] = 'J'
 card_num[11] = 'Q'
 card_num[12] = 'K'
 
-card_shake = [[0]*2 for i in range(52)]
-card_five = [0]*5
+card_shake = [[0]*2 for i in range(52)]  
+card_five = [0 for i in range(5)]
 cnt = 0
 
 

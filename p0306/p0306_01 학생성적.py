@@ -168,7 +168,7 @@ while True:
             search = input('삭제하고자 하는 학생의 이름을 입력하세요(0.취소) >> ')
             chk = 0
             if search == '0':
-                print('학생수정을 취소합니다.')
+                print('학생삭제을 취소합니다.')
                 break
             
             for i in students:

@@ -7,3 +7,7 @@ for i, stu in enumerate(students):
     kors += stu[1]
 
 print(kors)
+
+
+
+
