@@ -232,37 +232,30 @@ while True:
             print(f'{search}학생의 정보입니다.')
             print(students[cnt])
             print('-'*50)
-            sub = ['','국어','영어','수학']
             s_choice = input('수정할 과목을 선택하세요 (1.국어 / 2.영어 / 3.수학 / 0.뒤로가기)')
             if s_choice.isdigit():
                 s_choice = int(s_choice)
             
             if s_choice == 1:
+                sub = ['','국어','영어','수학']
                 sub2 = ['',students[cnt].kor,students[cnt].eng,students[cnt].math]
-                
-                # with open('stu.txt','w',encoding='utf8') as ff:
-                #     while True:
-                #         txt = ff.readline
-                #         s_l = txt.strip().split(',')
-                        
-                        
-                        
-                        
-                #         if 
-                
-                s1 = Student()
-                
-                a = sub2[s_choice]
+
                 score = int(input(f'수정할 {sub[s_choice]}점수를 입력하세요'))
-                students[cnt].kor
                 
-                # sub2[s_choice]= score
-                students[cnt].total = students[cnt].kor + students[cnt].eng + students[cnt].math
-                students[cnt].avg = '{:.2f}'.format(students[cnt].total/3)
-                print(students[cnt])
-                
-                
-                
+                with open('stu.txt','w',encoding='utf8') as ff:
+                    for i in range(len(students)):
+                        if i == cnt-1:
+                            sub2[s_choice] = score      # 국어 점수 수정
+                            students[cnt].total = students[cnt].kor + students[cnt].eng + students[cnt].math
+                            students[cnt].avg = '{:.2f}'.format(students[cnt].total/3)
+                            s1 = Student(Student(students[i][1],sub2[s_choice],sub2[s_choice],sub2[s_choice],students[i][0],students[i][7]))
+                            ff.write(s1.stuNo,s1.name,s1.kor,s1.eng,s1.math,s1.total,s1.avg,s1.rank)
+                            
+                        else:
+                            s1 = Student(Student(students[i][1],students[i][2],students[i][3],students[i][4],students[i][0],students[i][7]))
+                            ff.write(s1.stuNo,s1.name,s1.kor,s1.eng,s1.math,s1.total,s1.avg,s1.rank)
+                for i in students:
+                    print(i)
                 
         
         
