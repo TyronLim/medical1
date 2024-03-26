@@ -1,0 +1,14 @@
+import requests
+# 웹에 접근해서 html 소스를 가져옴
+res = requests.get('https://www.google.com/')
+
+# 200 : 정상   / 403,404 : 페이지 없음  /  500 : 프로그램에러
+print(res)
+print(type(res))
+print('-'*50)
+# requests를 통해 html소스를 출력
+print(res.text)
+
+
+
+
