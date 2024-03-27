@@ -10,12 +10,13 @@
             font-weight:400;
             font-style:normal;
             }
-            table{margin:auto; border:1px solid orange}
+            table{border-collapse:collapse; margin:auto; border:1px solid orange}
         
             th,td{border:1px solid black;}
-            th{font-weight:700;}
+            th{font-weight:700;text-align:center;}
             td{padding-left:2px;}
             p{text-align: center; font-size:15px}
+            thead,tfoot{background:rgb(178, 226, 245);}
         </style>
     </head>
     <body>
@@ -30,7 +31,7 @@
                 <col width="150px">
             </colgroup>
             <thead>
-                <tr bgcolor="skyblue">
+                <tr>
                     <th>방 이름</td>
                     <th>대상</td>
                     <th>크기</td>
@@ -39,27 +40,27 @@
             </thead>
             <tbody>
                 <tr>
-                    <td align="center">유채방</td>
+                    <th>유채방</th>
                     <td>여성 도미토리</td>
                     <td rowspan="3" >4인실</td>
                     <td rowspan="4">1인 20,000원</td>
                 </tr>
                 <tr>
-                    <td rowspan ="2" align="center">동백방</td>
+                    <th rowspan ="2">동백방</th>
                     <td>동성 도미토리</td>
                 </tr>
                 <tr>
                     <td>가족 1팀</td>
                 </tr>
                 <tr>
-                    <td align="center">천혜향방</td>
+                    <th>천혜향방</th>
                     <td>-</td>
                     <td>2인실</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td bgcolor="skyblue" colspan="4" align="center">바깥채 전체를 렌트합니다</td>
+                    <th colspan="4">바깥채 전체를 렌트합니다</th>
                 </tr>
             </tfoot>
 
