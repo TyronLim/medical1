@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width:80%; height:100px; border:1px solid black;}
+        span{border:3px solid black; }
+        img{vertical-align:top;}/*top, middle, bottom*/
+        #s01{display:inline-block; width:300px; height:100px;}
+        /* 인라인 요소를 가지면서 블록 요소도 갖게하는 속성 */
+        /* block, inline, inline-block */
+        #d01{background:blue;}
+        #d02{background:yellow;}
+        #d02:hover{display:none;}
+        #d03{background:green;}
+        img:hover{display:none;}
+    </style>
+</head>
+<body>
+    <div id="d01"></div>
+    <div id="d02"></div>
+    <div id="d03"></div>
+    <span id="s01">aaa</span>
+    <span>aaa</span>
+    <span>aaa</span><br>
+    <img src="images/back.jpg">배경입니다.
+    
+</body>
+</html>
