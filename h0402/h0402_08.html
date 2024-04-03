@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        #main{padding-top:100px; width:1400px; height:400px; margin:0 auto; 
+            display:flex; justify-content: space-around;}
+        .article{width:410px; height:354.19px;}
+        .img{ height:254.19px; }
+        .img a{height:254.19px; width:410px; overflow:hidden;}
+        .img a:hover img{transform:scale(1.1);transition:transform 0.3s;}
+        img{position:absolute;z-index:1;height:254.19px; transition:transform 0.3s; }
+        .img p{width:70px; height:45px; z-index:2; font-size:15px; color:#fff;
+            font-weight:600; background:#907559;}
+        .title{box-sizing:border-box;padding-top:30px;height:100px;}
+        .title h2{font-size:20px; letter-spacing:-0.05em;font-weight:600; color:#1d1d1d;}
+        .img p{position:absolute; margin-top:10px; font-size:15px; color:white; 
+            line-height:45px; text-align:center;font-weight:600;}
+        .title p{margin-top:15px;font-size:15px; color:#5c5c5c; font-weight:400;
+            letter-spacing:-0.02em;}
+        .span{margin-left:10px; }
+        
+        
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="article">
+            <div class="img">
+                <div class="parent"><a href="#"><img src="images/01.jpg"></a></div>
+                <div class="span"><p>이벤트</p></div>
+            </div>
+            <div class="title">
+                <div class="intitle">
+                    <h2>[4월] 행복이 피어나는 블루밍 리솜</h2>
+                    <p>이용기간 : 2024.04.05~2024.04.30</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <div class="img">
+                <div><a href="#"><img src="images/02.jpg"></a></div>
+                <div class="span"><p>이벤트</p></div>
+            </div>
+            <div class="title">
+                <div class="intitle">
+                    <h2>[마묵라운지] 홈메이드 프렌치 토스트</h2>
+                    <p>이용기간 : 2024.01.29~종료시까지</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="article">
+            <div class="img">
+                <div><a href="#"><img src="images/03.jpg"></a></div>
+                <div class="span"><p>이벤트</p></div>
+            </div>
+            <div class="title">
+                <div class="intitle">
+                    <h2>[힐링크루] 리오 데일리 프로그램</h2>
+                    <p>이용기간 : 2023.07.14~종료시까지</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
