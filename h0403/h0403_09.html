@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        .main{width:100%; height:1200px;}
+        .top{width:100%; height:200px; background:steelblue;}
+        .middle{width:100%; height:600px; display:flex;}
+        .left1{width:20%; height:600px; background:tan;}
+        .left2{width:20%; height:600px; background:brown;}
+        .left3{width:20%; height:600px; background:purple;}
+        .right{width:40%; height:600px;background:khaki;}
+        .footer{width:100%; height:300px;background:lavender;}
+        
+        @media screen and (max-width:1600px){
+            .left1{background:blue;}
+        }
+        @media screen and (max-width:1200px){
+            .left1{background:green;}
+        }
+        @media screen and (max-width:1000px){
+            .left1{background:pink; width:33.3%}
+            .left2{width:33.3%}
+            .left3{width:33.3%}
+            .right{display:none;}
+        }
+        @media screen and (max-width:800px){
+            .middle{width:100%; display:block;}
+            .left1{background:yellow;width:100%}
+            .left2{width:100%; height:300px;display:block;}
+            .left3{width:100%; height:300px;display:block;}
+            .right{width:100%; height:300px;display:block;}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="left1"></div>
+            <div class="left2"></div>
+            <div class="left3"></div>
+            <div class="right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

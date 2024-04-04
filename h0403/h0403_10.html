@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객행복센터 - 집밥을 특별하게</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+        *{margin:0; padding:0;
+            font-family: "Noto Sans KR", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;}
+        header{width:100%; height:35px; background:#202020; padding-top:10px; box-sizing: border-box;}
+        header ul{list-style:none;display:flex; justify-content: end; margin-right:40px; }
+        header li{font-size:13px; color:#ffffff; font-weight:500;
+            display:flex;margin-left:23px; }
+
+        section{width:100%; height:81px; border-bottom:1px solid #606060;
+            display:flex; justify-content: space-between;align-items: center;}
+        .logo{margin-left:40px;width:100px; height:30px; background:url("images/ico_set.png")-320px -385px no-repeat;
+            background-size:800px 800px;}
+        .mmenu{width:740px; height:32px; }
+        .mmenu ul{list-style: none;}
+        .mmenu li{display: inline; font-size:22px; padding-left:58px;font-weight:800;}
+        .cart{width:120px; height:50px; display:flex; justify-content: space-between;}
+        .cart .c01{width:32px; height:32px;border:1px solid black;}
+        .cart .c01 a{width:32px; height:32px; background:url("images/ico_set.png")-584px -320px no-repeat;}
+            
+        .main{width:1180px; height:1644px; margin:100px auto;}
+        .line{border-bottom:4px solid black; padding-bottom:23px;}
+        .line h2{font-size:40px; font-weight:700;}
+        .menu{margin-top:40px;}
+        .menu ul{list-style: none;color:#606060;}
+        .menu li{display:inline; font-size:22px;margin-right:25px; font-weight:700;}
+        #bold{color:black; border-bottom:3px solid black; padding-bottom:5px;}
+        .table table{width:1180px;margin-top:70px;border-top:2px solid black;
+            border-collapse: collapse;}
+      
+        .table tr{text-align:center;}
+        .table th{height:47px; background:#F2F2F2; font-weight:600;}
+        .table td{height:63px; font-size:14px; color:#101010; font-weight:500;
+            border-bottom:1px solid #F2F2F2;}
+        .table .tit{text-align:left;}
+        .page{width:280px; height:40px; margin:40px auto;}
+        .page ul{list-style:none; text-align:center;display:flex; }
+        .page li{display:flex; justify-content: center; align-items: center; width:40px; 
+            height:40px; color:#606060; font-weight:600;}
+        .page #l01{background:#202020; color:white;}
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>회원가입</li>
+            <li>로그인</li>
+            <li>고객행복센터</li>
+            <li>기프트카드 등록</li>
+        </ul>
+    </header>
+    <section>
+        <div class="logo"></div>
+        <div class="mmenu">
+            <ul>
+                <li>COOKIT소개</li>
+                <li>COOKIT메뉴</li>
+                <li>리뷰</li>
+                <li>이벤트</li>
+                <li>MY쿡킷</li>
+            </ul>
+        </div>
+        <div class="cart">
+            <div class="c01"><a href="#"></a></div>
+            <div class="c02"></div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <div class="main">
+        <div class="line"><h2>고객행복센터</h2></div>
+
+        <div class="menu">
+            <ul>
+                <li>FAQ</li>
+                <li id="bold">공지사항</li>
+                <li>지정일배송/이용안내</li>
+            </ul>
+        </div>
+
+        <div class="table">
+            <table>
+                <colgroup>
+                    <col width="10%">
+                    <col width="75%" text-align="left">
+                    <col width="15%" style="font-weight:700; color:#606060;">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>등록일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>199</td>
+                        <td class="tit">CJ ONE포인트 및 기프트카드 사용 일시중단 안내 [3/26(화) 02:00~07:00]</td>
+                        <td>2024-03-21</td>
+                    </tr>
+                    <tr>
+                        <td>198</td>
+                        <td class="tit">택배시스템 서버 점검에 따른 서비스 일시 불가 안내 [3월17일 02:30 ~ 06:30]</td>
+                        <td>2024-03-06</td>
+                    </tr>
+                    <tr>
+                        <td>197</td>
+                        <td class="tit">쿡킷 서버 점검에 따른 서비스 일시 불가 안내 [2/24(토)00:00~06:00]</td>
+                        <td>2024-02-20</td>
+                    </tr>
+                    <tr>
+                        <td>196</td>
+                        <td class="tit">[당첨안내] 홀리데이 세일 이벤트 당첨자 공지</td>
+                        <td>2024-01-08</td>
+                    </tr>
+                    <tr>
+                        <td>195</td>
+                        <td class="tit">CJ제일제당 서비스 이용약관 변경 고지 [2023.12.26 시행]</td>
+                        <td>2023-12-15</td>
+                    </tr>
+                    <tr>
+                        <td>194</td>
+                        <td class="tit">[당첨안내] 겨울캠핑 이벤트 당첨자 공지</td>
+                        <td>2023-12-14</td>
+                    </tr>
+                    <tr>
+                        <td>193</td>
+                        <td class="tit">택배추적 일시불가 안내 [12/10(일)03:00~06:00]</td>
+                        <td>2023-12-06</td>
+                    </tr>
+                    <tr>
+                        <td>192</td>
+                        <td class="tit">주문취소 및 배송지 변경 일시 불가 안내 [11/25(토)22:00~05:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>191</td>
+                        <td class="tit">기프트카드 서비스 일시중단 안내[2023.11.23(목)04:00~05:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>190</td>
+                        <td class="tit">주문취소 및 배송지 변경 일시 불가 안내 [11/18 20:00~11/19 03:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>189</td>
+                        <td class="tit">[당첨안내] 더건강한 닭가슴살 케이준 NEW&HOT 스토리 이벤트 당첨자 안내</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>188</td>
+                        <td class="tit">[당첨안내] 모둠사리스팸부대전골 신메뉴 리뷰 이벤트 당첨자 고지</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>187</td>
+                        <td class="tit">CJONE포인트 및 기프트카드 사용 일시중단 안내 [10/17(화) 02:00~07:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>186</td>
+                        <td class="tit">[당첨안내] 이너비 글루타치온 NEW&HOT 스토리 이벤트 경품이벤트 당첨 안내</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>185</td>
+                        <td class="tit">[쿡킷] 23년 추석 연휴 배송일 휴무 공지</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>184</td>
+                        <td class="tit">택배 상품 추적 서비스 일시중단 안내[9/3(일)00:00~05:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>183</td>
+                        <td class="tit">[쿡킷] 8월 광복절 배송 휴무일 안내</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>182</td>
+                        <td class="tit">[당첨안내] 양지육수 왕교자 만두전골 신메뉴 '네오플램 전골 냄비' 당첨자 고지</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>181</td>
+                        <td class="tit">주문취소 및 배송지 변경 일시 불가 안내 [6/30(금)23:30~03:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                    <tr>
+                        <td>180</td>
+                        <td class="tit">주문취소 및 배송지 변경 일시 불가 안내 [6/29(목)22:00~23:00]</td>
+                        <td>2023-11-24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="page">
+            <ul>
+                <li id="l01">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>></li>
+                <li>>></li>
+            </ul>
+        </div>
+
+    </div>
+    
+</body>
+</html>

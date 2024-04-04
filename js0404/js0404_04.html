@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교연산자</title>
+    <script>
+        var a = 10;
+        var b = 30;
+        var c = 10;
+        var f = "30";
+        var result;
+        var result2;
+        var result3;
+        
+        result = a>b;
+        document.write(result,"<br>");
+        result2 = a<b;
+        document.write(result2,"<br>"); // "a<b" 할때 < 쓰면 따옴표 안에 있어도 태그로 인식함.
+        result3 = a==c;
+        document.write(result3,"<br>");
+
+
+
+        document.write('----------------------------',"<br>")
+        if (b==f) //들어가 있는 값만 비교
+        {document.write('같습니다.',"<br>")}
+        else
+        {document.write('다릅니다.',"<br>","<br>")}
+        
+        if (b===f) //들어가 있는 값과 타입까지 비교
+        {document.write('같습니다.',"<br>")}
+        else
+        {document.write('다릅니다.',"<br>")}
+
+
+
+        document.write('----------------------------',"<br>")
+        if(a>b) //10>20 false
+        {document.write(a);}
+        else
+        {document.write(b);}
+        
+        if(b>c)
+        {document.write(b);}
+        else
+        {document.write(c);}
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

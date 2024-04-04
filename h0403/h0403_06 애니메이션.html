@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        div{width:100px; height:100px;background:green; border:1px solid pink;
+        /*animation-name:move;
+        animation-duration:3s ;
+        animation-iteration-count: 1;  횟수만큼 진행 
+        animation-direction:alternate;  normal, alternate - 역방향
+        animation-timing-function:ease-in;  속도 그래프 
+        animation-fill-mode:forwards;  종료 후 스타일 지정 forwards backwards both
+        animation-delay:1s;  딜레이 
+        */
+        /*이름 시간 속도 딜레이 반복 회귀*/
+        animation:move 2s ease-in 0s infinite alternate;
+           
+        }
+
+        @keyframes rotate{
+            from{transform:rotate(0deg);}
+            to{transform:rotate(360deg);}
+        }
+        @keyframes move{
+            from{background:blue; border:1px solid pink;
+            transform:translate(0,0);}
+            to{background:blueviolet; border:1px solid pink;
+            border-radius:50%;
+            transform:translate(400px,0);}
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
