@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>for</title>
+    <title>Document</title>
+    <style>table{border-collapse:collapse}
+
+
+
+    </style>
     <script>
-
-        for(var i=2;i<=9;i++){
-            document.write(i,'단<br>');
-            for(var j=1;j<=9;j++){
-                document.write(i,'*',j,'=',i*j,'<br>');
-            }
-        } 
-
-
-
+        document.write("<table>");
+            document.write("<tr>");
+                for(var i=2;i<=9;i++){
+                    document.write("<td>");
+                        for(var j=1;j<=9;j++){document.write(j,'*',i,'=',i*j,'&nbsp&nbsp&nbsp')
+                    document.write("</td>");
+            document.write("</tr>");
+        document.write("</table>");
+            
     </script>
 </head>
 <body>

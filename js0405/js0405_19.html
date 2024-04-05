@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자열</title>
+    <script>
+        //var num=5;
+        //console.log(String(num).padStart(2,'0'));
+        //console.log('%02f'.format(14));
+        
+        //랜덤숫자 11-99 랜덤숫자
+        v
+
+
+        //랜덤숫자 1-99999 랜덤숫자      
+        var rand_num = new String(Math.floor(Math.random()*99999)+1);
+        rand_num = String(rand_num).padStart(5,'0');
+        var input_num = prompt('숫자를 입력하세요',rand_num);
+
+        cnt = 0
+        for(var i=0;i<5;i++){
+            if(rand_num.charAt(i)==input_num.charAt(i)){
+                cnt++;}};
+
+        document.write('<h2>랜덤숫자 : ',rand_num,'<br></h2>');
+        document.write('<h2>입력숫자 : ',input_num,'<br></h2>');
+        document.write('<h1>맞은 개수 : ',cnt,'</h1>');
+
+    </script>
+    <style>
+        *{width:300px; margin:100px auto;}
+        h1{color:red;}
+        h2{color:blue;}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체</title>
+    <script>
+        // 1.객체 생성 후 변수, 함수 추가
+        var tv = new Object();
+        tv.color="white";
+        tv.price=1000000;
+        tv.info = function(){
+            document.write('tv색상 :'+tv.color,'<br>');
+            document.write('tv가격 :'+tv.price,'<br>');
+        }
+
+        // 2.객체 생성 때, 변수와 함수 추가
+        var car={
+            color:"black",
+            price:2000000,
+            info:function(){
+                document.write('tv색상 :'+car.color,'<br>');
+                document.write('tv가격 :'+car.price,'<br>');
+            }
+        }
+        
+        document.write('<h1>1. 객체메소드호출</h1>');
+        tv.info();
+        document.write('-------------------------------------<br>');
+        document.write('<h1>2. 객체메소드 호출</h1>');
+        car.info();
+        car.color = 'pink'
+        car.info();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

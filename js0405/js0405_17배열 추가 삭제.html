@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <script>
+        var arr1 = ['홍길동','유관순','이순신','김구','강감찬','김유신','장보고'];
+        for(var i=0;i<arr1.length;i++){
+            document.write(i,':',arr1[i],'<br>');
+        }
+        document.write('----------------------------------------<br>')
+        arr1.pop(); // 삭제(마지막 꺼)
+        arr1.shift();   // 삭제(제일 앞 꺼)
+        arr1.splice(1,1);  // 삭제(index위치,개수)
+        arr1.push('홍길순'); // 추가(맨 뒤 데이터)
+        for(var i=0;i<arr1.length;i++){
+            document.write(i,':',arr1[i],'<br>');
+        }
+        document.write('----------------------------------------<br>')
+        var arr2 = arr1.slice(2,4); // 슬라이싱 2~5앞  까지 가져옴
+        for(var i=0;i<arr2.length;i++){
+            document.write(i,':',arr2[i],'<br>');
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
