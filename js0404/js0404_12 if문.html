@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if문</title>
+    <script>
+        var num1 = Number(prompt('숫자를입력하세요','랜덤 큰수 작은수~'))
+        // var num2 = Math.floor(Math.random()*100)+1
+        var num2 = 50
+
+        document.write('입력한 수 : ',num1,'<br>')
+        document.write('랜덤 수 : ',num2,'<br>')
+        /*if(num1>num2){document.write('입력한 수가 더 큽니다.');}
+        
+        else{document.write('입력한 수가 더 작습니다.');}*/
+
+        var result=(num1<=num2)?(num1==num2)?'입력한 수와 같습니다.':'입력한 수가 더 작습니다.':'입력한 수가 더 큽니다.';
+        
+        document.write(result);
+        
+        
+        
+        /* Math.random() */
+        /*document.write(Math.floor(Math.random()*45)+1,'<br>');
+        document.write(Math.random()*45+1);*/
+
+
+
+
+        /*
+        var num = Number(prompt('숫자를 입력하세요','과연 500보다 클지 작을지'));
+        if(num<=500){document.write('500보다 작습니다.');}
+        else{document.write('500보다 큽니다.');}
+        */
+    </script>
+</head>
+<body>
+</body>
+</html>
