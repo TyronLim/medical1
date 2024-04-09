@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a1{width:100%;height:1000px; background:#8c8c8c;border:1px solid black; 
+            align-content: center; align-items: center;}
+        .a2{width:300px; height:400px; border:1px solid black; margin-left:400px;
+            display:none;}
+        
+        
+        
+    </style>
+    <script>
+        function open(){
+            var modal = document.querySelector('.a2');
+            modal.style.display='flex'
+        }
+
+
+
+
+
+        //var a = ['a','b','c','d','e','f'];
+
+        //a.splice(0,2);   0번째에서 2개까지 삭제
+        //a.shift();   제일 앞에꺼 삭제
+        //a.pop();   제일 뒤에꺼 삭제
+        //a.push(1); 제일 뒤에 추가
+        
+        // document.write(a.slice(0,2)); 슬라이싱(0부터 1까지)
+
+        /*
+        for(var i=1;i<=9;i++){
+            //document.write("<h2>",i,"단</h2>");
+            for(var j=2;j<=9;j++)
+                document.write(j,'*',i,'=',i*j,"&nbsp&nbsp");
+            document.write('<br>');
+        }*/
+
+        /*
+        var str1="안녕하세요. 오늘은 4월 5일 금요일입니다. 주말 잘 보내세요."
+        document.write(str1.length,'<br>');
+        document.write(str1.charAt(4),'<br>');
+        document.write(str1.indexOf('오늘은'),'<br>');
+        document.write(str1.indexOf('파이썬'),'<br>');
+        document.write(str1.match('오늘'),'<br>');
+        document.write(str1.search('4월'),'<br>');
+        document.write(str1.search('에에'),'<br>');
+        document.write(str1.substring(3,8),'<br>');
+        document.write(str1.replace('오늘','내일'),'<br>');
+        document.write(str1.replaceAll(' ',''),'<br>');
+        */
+
+
+    </script>
+</head>
+<body>
+    <button onclick="open()">모달창 열기</button>
+    <div class="a1">
+        <div class="a2">모달창입니다.</div>
+
+    </div>
+    
+</body>
+</html>

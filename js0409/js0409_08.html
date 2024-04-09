@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:focus{outline:none;}
+        table{border-collapse:collapse;height:50px; text-align:center;}
+        td{border:1px solid #dadce0;height:40px; font-size:25px; font-weight:600;}
+        button{width:120px; height:35px;}
+        #cel{font-size:25px; font-weight:600;height:40px;width:150px;border:0;
+            text-align:center;}
+        .td1{border-top:0px; border-bottom:0px;}
+        .td2{height:28px; background:#f8f9fa; font-size:13px;}
+        .tr3{border:0;}
+    </style>
+    <script>
+        //섭씨 32 = 32 * 9/5 +32
+        function mbtn(){
+            let celsi = document.querySelector("#cel").value;
+            document.querySelector('#fa').innerText = ((celsi*9/5)+32).toFixed(1)+'°F';
+       }
+    </script>
+</head>
+<body>
+    <h2>섭씨 > 화씨 변환 계산<h2>
+    <table>
+        <colgroup>
+            <col width="150px">
+            <col width="50px">
+            <col width="150px">
+        </colgroup>
+        <tr>
+            <td><input type="text" name="cel" id="cel" value="0" onkeydown="mbtn()"></td>
+            <td rowspan="2" class="td1">=</td>
+            <td id="fa">0</td>
+        </tr>
+        <tr>
+            <td class="td2">섭씨</td>
+            <td class="td2">화씨</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="tr3">
+                <button>확인</button>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>

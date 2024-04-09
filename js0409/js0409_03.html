@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 return</title>
+    <script>
+        function result(num1,num2){
+
+            let n_total = (num1+num2);
+            let n_avg = (num1+num2)/2;
+            let arr_result = [n_total,n_avg];
+            return arr_result;                        //리턴값 두 개 불가 (배열에 넣어서 가능)
+            //alert('총점 / 평균 :',n_total,n_avg,'<br>')
+        }
+
+        var num1=Number(prompt('국어점수를 입력하세요.'))
+        var num2=Number(prompt('영어점수를 입력하세요.'))
+        document.write('점수 :',num1,'<br>')
+        document.write('점수 :',num2,'<br>')
+
+        var arr_result = result(num1,num2);
+        //document.write('결과값 :',arr_result,'<br>')
+
+    </script>
+
+
+</head>
+<body>
+    <button onclick="result()">펑균구하기</button>
+
+
+
+</body>
+</html>

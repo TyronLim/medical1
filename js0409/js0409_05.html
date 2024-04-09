@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for</title>
+    <style>
+        div{width:500px; height:200px; border:3px solid black;}
+
+    </style>
+    <script>
+        function btn(){
+            var text = document.querySelector('#content').value;
+            //console.log(document.querySelector('#content').value);
+            //innerText 태그로 입력
+            document.querySelector('#main').innerText=text;
+            //document.querySelector('#main').innerText='<h2>안녕하세요.</h2>';
+
+            //innerHTML 태그로 입력
+            //document.querySelector('#main').innerHTML='<h2>안녕하세요.</h2>';
+            
+        }
+            
+        function birthBtn(){
+            alert('연도 : ',document.querySelector('#year').value);
+        }
+
+
+
+    </script>
+</head>
+<body>
+    <div id="main">
+
+    </div>
+    <br>
+    <label>글자를 적으시오.</label>
+    <input type="text" name="content"  id="content"><br>
+    <br><br>
+    <button onclick="btn()">저장</button>
+
+
+    <h2>생년월일</h2>
+    <select id="year">
+        <option value="1901">1901년</option>
+
+    </select>
+    <select id="month">
+        <option value="1">1월</option>
+ 
+    </select>
+    <select id="day">
+        <option value="1">1일</option>
+
+    </select>
+
+    <button onclick="birthBtn()">데이터읽기</button>
+
+
+
+    <script>
+        var html_data = '';
+            for(var i=1901; i<2025; i++){
+                html_data += "<option value='"+i+"'>"+i+"년</option>";
+                //html_data += `<option value='${i}'>${i}년</option>`;
+            }
+            console.log(html_data);
+            document.querySelector('#year').innerHTML = html_data;
+
+            
+            var month_data = '';
+            for(var j=1;j<13;j++){
+                month_data += "<option value="+j+">"+j+"월</option>";
+            }
+            console.log(month_data);
+            document.querySelector('#month').innerHTML = month_data;
+
+            var day_data = '';
+            for(var t=1;t<32;t++){
+                day_data+= "<option value="+t+">"+t+"일</option>";
+            }
+            console.log(day_data);
+            document.querySelector('#day').innerHTML = day_data;
+    </script>
+    <br>
+    <br>
+    <span>
+        <button>확인</button>
+        <button>취소</button>
+    </span>
+
+
+</body>
+</html>
