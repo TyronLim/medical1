@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{width:400px;height:100px; margin:50px auto;}
+    </style>
+    <script>
+        //1. wisdow.open();
+        
+        //2. alert('경고창을 띄웁니다.');
+        //3. var input1 = prompt('데이터를 입력하는 창');  //취소:False
+            //document.write('입력데이터 :',input1);
+        //4. var input2 = confirm('삭제하시겠습니까?');
+            //docume
+            nt.write('컨펌 :',input2);  //true or false
+
+
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <button onclick="open_popup()">팝업창 열기</button>
+        <br>
+        <br>
+        <button onclick="popup_resize()">팝업창 크기조절(resizeTo)</button>
+        <br>
+        <br>
+        <button onclick="popup_resize2()">팝업창 크기조절(resizeTo)</button>
+    </div>
+    <script>
+        var w;
+        var x_size=302;
+        var y_size=402;
+        function open_popup(){
+            w = window.open('','pop1','width=302,height=402');
+            //w.document.write('<h1>팝업창</h1>');
+            w.focus();
+        }
+
+        function popup_resize(){
+            x_size += 100;
+            y_size += 100;
+            w.resizeTo(x_size,y_size);
+            w.focus();
+        }
+        function popup_resize2(){
+            x_size -= 100;
+            y_size -= 100;
+            w.resizeTo(x_size,y_size);
+            w.focus();
+        }
+
+    </script>
+</body>
+</html>

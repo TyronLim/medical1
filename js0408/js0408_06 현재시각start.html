@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval</title>
+    <style>
+        *{margin:0;padding:0;}
+        div{width:500px;height:100px; margin:50px auto;} 
+        button{width:150px; height:40px;display:block;margin:0 auto;}
+        h2{font-size:40px; text-align:center; border:3px solid black;}  
+    </style>
+    <script>
+        
+        var d_day = new Date(2024,3,8,15,1,1);
+        document.write('시간 : ',d_day.getHours(),'<br>');
+        document.write('분 : ',d_day.getMinutes(),'<br>');
+        document.write('초 : ',d_day.getSeconds(),'<br>');
+
+
+
+
+    </script>
+</head>
+<body>
+    <div>
+        <h2>[ 15시까지 남은 시간 ]</h2>
+        <h2 class="title">00:00:00</h2>
+        <br>
+        <button onclick="auto_plus()">시계START</button>
+        <button onclick="clearInterval(auto1)">시계STOP</button>
+    </div>
+</html>

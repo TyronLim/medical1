@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수</title>
+    <script>
+        var color = ['yellow','pink','aqua','purple','green','red','blue'];
+        var num = 0
+        
+        function preBtn(){
+            num--;
+            if(num==-1){
+                num=6
+            }
+            document.querySelector('.back').style.background =color[num];
+        }
+        function nextBtn(){
+            num++;
+            if(num==7){
+                num=0
+            }
+            document.querySelector('.back').style.background = color[num];
+        }
+        /*
+        function preBtn(){
+            document.querySelector('.back').style.background =color[num--];
+            if(num==-1){
+                num=6
+            }
+        }
+        function nextBtn(){
+            document.querySelector('.back').style.background = color[num++];
+            if(num==7){
+                num=0
+            }
+        
+        }
+        */
+    </script>
+    <style>
+        section{width:410px;margin:50px auto;}
+        div{width:400px; height:350px; border:2px solid black;}
+        button{width:150px; height:40px;text-align:center;}
+        .back{background:yellow;}
+    </style>
+</head>
+<body>
+    <section>
+        <div class="back"></div>
+        <br>
+        <button onclick="preBtn()">이전</button>
+        <button onclick="nextBtn()">다음</button>
+    </section>
+</body>
+</html>

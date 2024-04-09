@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen</title>
+    <script>
+        // screen : 현재 모니터 가로, 세로 길이를 알 수 있음.
+        var width1 = screen.width/2-151;
+        //document.write('모니터 가로 크기 : ',width1);
+        var height1 = screen.height/2-201;
+        // document.write('모니터 가로 크기 : ',width1);
+        // document.write('모니터 세로 높이 : ',height1);
+        function popupBtn(){
+            window.open('popup.html','pop','width=302px, height=402px,left='+width1+',top='+height1+'');
+        }
+    </script>
+</head>
+<body>
+    <button onclick="popupBtn()">팝업창 오픈</button>
+</body>
+</html>

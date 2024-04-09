@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d_day</title>
+    <style>
+        * {margin:0; padding:0;}
+        div{width:700px; height: 200px; margin:50px auto; }
+        button{width:150px; height:40px; display: block; margin:0 auto; }
+        h2{font-size:40px; text-align: center; border:3px solid black;}
+    </style>
+    <script>
+        /*
+        function auto_plus(){
+            auto1 = setInterval(clock_count,1000);
+        }
+        */
+        var today = new Date();
+        var d_day = new Date(2024,9,31,23,59,59);
+        
+        var diff = d_day.getTime()-today.getTime();
+        document.write(diff);
+        
+        
+
+        function clock_count(){
+            
+
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <h2>[ 10월 31일까지 남은 일자 및 시간 ]</h2>
+        <h2 class="title1">0일</h2>
+        <h2 class="title2">00:00:00</h2>
+        <br>
+        <button onclick="auto_plus()">시계START</button>
+        <button onclick="clearInterval(auto1)">시간멈춤</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 정보</title>
+    <style>
+        *{margin:0;padding:0;}
+    </style>
+    <script>
+        var d_day = new Date(2024,9,31);
+        var today = new Date()
+
+        
+        var diff = d_day.getTime() - today.getTime();
+        document.write(diff,'<br>');
+
+        var time = diff/(1000*60*60*24);
+        document.write(time,'<br>');
+
+        var result = Math.floor(diff/(1000*60*60*24));
+        var remain = diff%((1000*60*60*24));
+        document.write(result,'일<br>');
+
+        var result2 =Math.floor(remain/(1000*60*60));
+        var remain2 = remain%(1000*60*60);
+        document.write(result2,'시<br>');
+        //document.write(remain2,'<br>');
+        
+        var result3 =Math.floor(remain2/(1000*60));
+        var remain3 = remain2%(1000*60);
+        document.write(result3,'분<br>');
+
+        var result4 =Math.floor(remain3/(1000));
+        var remain4 = remain3%(1000);
+        document.write(result4,'초<br>');
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

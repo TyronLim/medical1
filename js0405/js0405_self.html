@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*
+        var site = prompt('1.na 2.da 3.go');
+        var url;
+        switch(site){
+            case '1': url = 'http://www.naver.com';
+            break;
+            case '2': url = 'http://www.daum.net';
+            break;
+            
+            case '3': url = 'http://www.google.com';
+            break;
+        }
+
+        if(url){location.href=url;}
+        */
+
+        /*
+        //숫자를 입력받아 1부터 합계를 구하시오. 두개를 받을 시 사이의 합계를 구하시오.
+        var num = Number(prompt('1숫자를 입력해주세요.','이 숫자부터 더할거다'));
+        var num2 = Number(prompt('2숫자를 입력해주세요.','이 숫자까지 더할거다'));
+        var sum = 0;
+        var i = 1;
+        
+        if(num<num2){
+            while(num<=num2){
+            
+                sum+=num;
+                num++;
+                }
+                document.write('i의 값 : ', num,"<br>");
+                document.write('총 합 : ', sum,"<br>");
+            }
+        else if(num>num2){
+            while(num2<=num){
+                sum+=num2;
+                num2++;
+            }
+                document.write('i의 값 : ', num2,"<br>");
+                document.write('총 합 : ', sum,"<br>");
+        }
+        else{
+            sum=num
+            document.write('i의 값 : ', num2,"<br>");
+            document.write('총 합 : ', sum,"<br>");
+        }
+        */
+
+        var rand = Math.floor(Math.random()*45+1);
+        var inpu = prompt('맞힐 숫자를 입력하세요',rand);
+
+
+        if(rand==inpu){
+            document.write('맞혔습니다')
+        }
+        else{
+            document.write('틀렸습니다')
+            
+        }
+        //document.write(rand);
+
+
+
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
