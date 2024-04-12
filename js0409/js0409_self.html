@@ -14,11 +14,15 @@
         
     </style>
     <script>
-        function open(){
+        function open_click(){
             var modal = document.querySelector('.a2');
             modal.style.display='flex'
         }
 
+        function close_click(){
+            var c_modal = document.querySelector('.a2');
+            c_modal.style.display = 'none'
+        }
 
 
 
@@ -58,9 +62,9 @@
     </script>
 </head>
 <body>
-    <button onclick="open()">모달창 열기</button>
+    <button onclick="open_click()">모달창 열기</button>
     <div class="a1">
-        <div class="a2">모달창입니다.</div>
+        <div class="a2" onclick="close_click()">모달창입니다.</div>
 
     </div>
     

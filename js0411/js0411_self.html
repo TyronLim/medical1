@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>self</title>
+    <style>
+        div{width:400px;height:400px;border:1px solid black;}
+        form{width:1000px; height:700px; margin:100px auto;}
+        #nameBox{width:400px;height:100px;font-size:15px; font-weight:600; }
+        #name{width:800px;height:50px;}
+    </style>
+    <script>
+        /*
+        function dBtn(){
+            if(window.event.keyCode==13){
+                console.log("enter키 누름");
+                $("#main").text( $("#txt").val() );
+        }
+    }
+    $(function(){
+        $("#txt").keyup(function(){
+            $('#main').text($('#txt').val())
+        })
+    });
+    <div id="main">dd</div><br>
+    <input type="text" name="txt" id="txt">
+    <button id="write">입력</button>
+
+
+
+    <form action="#" name="frm" method="get">
+        <input type="text" name="name" id="name1" value="이름"><br>
+        <input type="radio" name="hobby" id="book" value="book1">
+        <label for="book">책읽기</label>
+    
+    </form>
+    $(function(){
+        $(".bt01").click(function(){
+            $("#d01").text($(".txt01").val());
+        })
+    });
+    $(function(){
+        $(".txt01").keyup(function(){
+            if(window.event.keyCode==13){
+                $("#d01").html($('.txt01').val())
+            }
+        })
+    });
+    <div id="d01">텍스트를입력하세요</div>
+    <input type="text" name="txt" id="txt" class="txt01">
+    <button onclick="bBtn()" class="bt01">입력</button>
+    */
+
+    </script>
+
+</head>
+<body>
+    <form>
+        <span id="nameBox">
+            <h2 id="nameLabel">이름</h2>
+            <input type="text" name="name" id="name" value="이름">
+        </span>
+        <br>
+        <br>
+        <br>
+        <h2 id="nameLabel">성별</h2>
+        <input type="radio" name="gender" id="mail" value="male">
+        <label for="male">남자</label>
+        <input type="radio" name="gender" id="femail" value="female">
+        <label for="female">여자</label>
+        <br>
+        <br>
+        <br>
+        <h2 id="nameLabel">연도</h2>
+        <select id="year">
+            <option value="1989">1989</option>
+            <option value="1990">1990</option>
+            <option value="1991" selected>1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+        </select>
+        <br>
+        <br>
+        <h2 id="nameLabel">자기소개</h2>
+        <textarea id="txt" cols="150" rows="5"></textarea>
+        <br>
+        <br>
+        <h2 id="nameLabel">취미</h2>
+        <input type="checkbox" id="book" value="book">
+        <label for="book">책읽기</label>
+        <input type="checkbox" id="cycle" value="cycle">
+        <label for="cycle">사이클</label>
+        <input type="checkbox" id="run" value="run">
+        <label for="run">조깅</label>
+        <input type="checkbox" id="movie" value="movie">
+        <label for="movie">영화</label>
+        <br>
+        <br>
+        총<input type="number" min="0" max="10">개<br>
+        총<input type="number" min="0" max="10">개<br>
+
+
+
+
+        <!--
+            <input type="checkbox" name="year" id="1990" value="1990">
+            <input type="checkbox" name="year" id="1991" value="1991">
+            <input type="checkbox" name="year" id="1992" value="1992">
+            <input type="checkbox" name="year" id="1993" value="1993">
+        -->
+
+    </form>
+        
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            //확인버튼 클릭하면 attr checked의 속성값을 console에 출력
+            // 속성값 가져오기 => attr,prop
+            $(".okbtn").click(function(){
+                //console.log($("#agree1").attr('checked'));
+                //console.log($("#agree1").attr('id'));
+                //$('#agree1').attr('checked','undefined');
+                //console.log($("#agree1").prop('checked','true'));
+                //console.log($("#agree1").prop('id'));
+                $('#agree1').prop('checked','true');
+                $('#agree2').prop('checked','true');
+                $('#agree3').prop('checked','true');
+
+                // document.querySelectorAll(".agree")
+                console.log('agree클래스 : ',document.querySelectorAll(".agree"));
+                console.log('agree클래스 : ',$('.agree')[0]);
+            })
+
+
+        });
+    </script>
+</head>
+<body>
+    <h2>약관 설명</h2>
+    <input type="checkbox" name="agree1" class="agree" id="agree1" value="yes">
+    <label for='agree1'>회원정보 사용동의합니다.</label>
+    <br>
+    <input type="checkbox" name="agree2" class="agree" id="agree2" value="yes">
+    <label for='agree2'>약관 동의합니다.</label>
+    <br>
+    <input type="checkbox" name="agree3" class="agree" id="agree3" value="yes">
+    <label for='agree3'>개인정보 동의합니다.</label>
+    <br>
+    <br>
+    <button class="okbtn">모두동의</button>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <style>
+        table{border-collapse: collapse; width:1200px;}
+        table,th,td{border:1px solid black; text-align: center;}
+        th{height:45px; background: #EFEFEF;}
+        td{height:40px; }
+    </style>
+    <script>
+        $(function(){
+
+            let no = [1,2,3,4,5,6,7,8,9,10];
+            let name = ['aaa','bbb','ccc','Rasia','Codee','Anson','Lunna','Gerek','Vittorio','Ashby'];
+            let address = [1111,2222,3333,2054,2809,4666,5168,4446,3085,2367];
+            let gender = ['F','F','F','F','F','M','F','M','M','M'];
+            let contact = ["356-370-5635","143-379-6512","483-424-5552","100-711-6893","207-883-7589","783-406-0909","266-436-8201","127-128-1902","445-191-3041","526-972-8179"];
+            let e_mail = ["ccritch0@latimes.com","dfosbraey1@hhs.gov","bpoulter2@umn.edu","risaacs3@webnode.com","ctwiname4@umn.edu","amattschas5@paypal.com","ltinsey6@cocolog-nifty.com","gmace7@cnet.com","vmcdiarmid8@plala.or.jp","agaffon9@amazon.co.uk"];
+            
+            let tmaker ="";
+            for(var i=0;i<10;i++){
+                tmaker+="<tr class='"+no[i]+"'>"
+                tmaker+="<td>"+no[i]+"</td>"
+                tmaker+="<td>"+name[i]+"</td>"
+                tmaker+="<td>"+address[i]+"</td>"
+                tmaker+="<td>"+gender[i]+"</td>"
+                tmaker+="<td>"+contact[i]+"</td>"
+                tmaker+="<td>"+e_mail[i]+"</td>"
+                tmaker+="<td><button class='delBtn'>삭제</button></td>"
+                tmaker+="</tr>"
+            } //for
+            
+
+            $("tbody").html(tmaker);
+
+            $(".delBtn").click(function(){
+                console.log($(this).parent().parent().attr("class"));
+                del_line = $(this).parent().parent();
+                if(confirm('삭제하시겠습니까?')){
+                    $(del_line).remove();
+                }
+                
+            });//delBtn
+
+
+
+
+
+
+
+
+
+    });//query
+        
+        
+
+
+
+    </script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Gender</th>
+                <th>Contact</th>
+                <th>E-mail</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
