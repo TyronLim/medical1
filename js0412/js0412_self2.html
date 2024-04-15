@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/main2.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main2.css">
+    <title>self2</title>
+    <style>
+        
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <section id="all">
+        <section id="all2">
+            <table>
+                <colgroup>
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="*">
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="12%">
+                    <col width="10%">
+                </colgroup>
+                <thead id="t_head">
+                    <tr id="tr_head">
+                        <th><input type="checkbox" name="allChk" id="allChk"></th>
+                        <th>학번</th>
+                        <th>이름</th>
+                        <th>국어</th>
+                        <th>영어</th>
+                        <th>수학</th>
+                        <th>총점</th>
+                        <th>평균</th>
+                        <th>등수</th>
+                        <th>삭제</th>
+                    </tr>
+                </thead>
+                <tbody id="t_body">
+
+                </tbody>
+            </table>
+            <div id="button">
+                <button id="writeBtn">학생입력</button>
+                <button id="modifyBtn">학생수정</button>
+                <button id="deleteBtn">학생삭제</button>
+                <button id="searchBtn">학생검색</button>
+            </div>
+        </section>
+        <div id="add_all_window">
+            <div id="add_window">
+                <div id="add_txt_window">
+                    <label for="add_name" class="add_txt">이름</label>
+                    <input type="text" name="add_name" id="add_name"><br>
+                    <label for="add_kor" class="add_txt">국어</label>
+                    <input type="text" name="add_kor" id="add_kor"><br>
+                    <label for="add_eng" class="add_txt">영어</label>
+                    <input type="text" name="add_eng" id="add_eng"><br>
+                    <label for="add_math" class="add_txt">수학</label>
+                    <input type="text" name="add_math" id="add_math">
+                </div>
+                <br>
+                <div id="add_button_window">
+                    <button id="add_ok_btn">확인</button>
+                    <button id="add_no_btn">취소</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="search_all_window">
+            <div id="search_window">
+                <h2>학생검색</h2>
+                <label for="search_name" class="search_txt">이름</label>
+                <input type="text" name="search_txt" id="search_txt"><br><br>
+                <button id="search_ok_btn">검색</button>
+                <button id="search_no_btn">취소</button>
+            </div>
+        </div>
+
+
+    <div id="chan_all_window">
+        <div id="chan_window">
+            <h2>학생수정</h2>
+            <label for="chan_name" class="chan_txt">이름</label>
+            <input type="text" name="chan_txt" id="chan_txt"><br><br>
+            <button id="chan_ok_btn">검색</button>
+            <button id="chan_no_btn">취소</button>
+        </div>
+    </div>
+
+    <div>
+        <div id="chan_stu">
+            <h2>학생수정</h2>
+            
+        </div>
+
+    </div>
+
+    </section>
+</body>
+</html>

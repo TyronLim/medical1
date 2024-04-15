@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        h2,form{text-align:center;}
+        #main{width:800px; height:300px; margin:50px auto; border:3px solid black;
+            font-size:20px; text-align:center;}
+    </style>
+    <script>
+        $(function(){
+            $("input[name='bcolor']").click(function(){
+                $("input[name='bcolor']").each(function(){
+                if($(this).is(':checked')){
+                    $("#main").css('background',""+$(this).val()+"")
+                }
+            })
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>원하는 색상을 클릭하시오.</h2>
+    <form>
+        <input type="radio" name="bcolor" id="yellow" value="yellow">
+        <label for="naver">yellow</label>
+        <input type="radio" name="bcolor" id="green" value="green">
+        <label for="green">green</label>
+        <input type="radio" name="bcolor" id="pink" value="pink">
+        <label for="pink">pink</label>
+    </form>
+    <div id="main"></div>
+</body>
+</html>

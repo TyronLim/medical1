@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>self</title>
+    <style>
+        /*
+        *{margin:0; padding:0;}
+        #main{width:300px; height:200px; margin:50px auto; border:3px solid black;
+            font-size:20px; text-align:center;}
+        #mbtn{display:block; width:120px;height:30px; margin:20px auto;}
+
+        $(function(){
+            $('#mbtn').on({
+                'mouseover focus':function(){
+                    $('#main').text(Number($('#num1').val())+Number($('#num2').val()))
+                },
+                'mouseout blur':function(){
+                    $('#main').text('')
+                }
+            })
+        });//query
+        
+        $(function(){
+            $('#mbtn').on({
+                'click':function(){
+                    $('#main').text('ddd')
+                }
+            })
+        })
+        
+        <div id="main">0</div>
+        <input type="text" name="num1" id="num1">+<input type="text" name="num2" id="num2">
+        <br>
+        <button id="mbtn">확인</button>
+
+        $(function(){
+            $("input[type='radio']").click(function(){
+                $("input[name='bcolor']").each(function(){
+                    if($(this).is(":checked")){
+                        $('#main').css('background',""+$(this).val()+"")
+                    }
+                    
+                })
+            })
+        })
+
+        *{margin:0; padding:0;}
+        h2,form{text-align:center;}
+        #main{width:800px; height:300px; margin:50px auto; border:3px solid black;
+            font-size:20px; text-align:center;}
+            $(function(){
+                $('input[name="bcolor"]').click(function(){
+                    $('input[name="bcolor"]').each(function(){
+                        if($(this).is(':checked')){
+                            $('#main').css('background',""+$(this).val()+"")
+                        }
+                    })
+                })           
+            })
+            <h2>원하는 색상을 클릭하시오.</h2>
+            <form>
+                <input type="radio" name="bcolor" id="yellow" value="yellow">
+                <label for="yellow">yellow</label>
+                <input type="radio" name="bcolor" id="green" value="green">
+                <label for="green">green</label>
+                <input type="radio" name="bcolor" id="pink" value="pink">
+                <label for="pink">pink</label>
+            </form>
+            <div id="main"></div>
+            *{margin:0; padding:0;}
+            h1{text-align:center;}
+            div{width:200px; height:100px; margin:50px auto; border:3px solid black;
+                font-size:20px; text-align:center;}
+    
+                //$(function(){
+                    //$(window).mousemove(function(e){
+                        //$('.mX').text(e.pageX);
+                        //$('.mY').text(e.pageY);
+                    //})
+                //});//query
+            
+                $(function(){
+                    $(window).on('mousemove',function(e){
+                        $('.mX').text(e.pageX);
+                        $('.mY').text(e.pageY);
+                    })
+                })
+                <h1>mousemove-마우스이동</h1>
+    <div>
+        <p>X:<span class="mX">0</span></p>
+        <p>Y:<span class="mY">0</span></p>
+    </div>
+        */
+        *{margin:0; padding:0;}
+        body{width:2000px; height:3000px;}
+        #main{width:600px; height:3000px; border:3px solid black;}
+        #title{position:fixed; top:30px;left:650px; border:1px solid black;
+            width:200px; height:200px; text-align:center;}
+    </style>
+    <script>
+        $(function(){
+            $(window).on('scroll',function(){
+                $('.top').text($(this).scrollTop());
+                $('.left').text($(this).scrollLeft());
+            })
+        })
+
+
+
+
+    </script>
+</head>
+<body>
+    <div id="title">
+        <p>scrollTop:<span class="top">0</span></p>
+        <p>scrollLeft:<span class="left">0</span></p>
+    </div>
+    <div id="main"></div>
+    
+</body>
+</html>
