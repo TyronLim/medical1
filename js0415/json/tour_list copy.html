@@ -12,8 +12,11 @@
   <script>
     $(function(){
       $("#mbtn").click(function(){
-        
+        let item_num = 10;
+        let gal_search = $('#gal_search').val();
         //alert("test");
+        alert($('#gal_search').val());
+        let item_count = Number($('#gal_search').val());
         $.ajax({
           url:"https://apis.data.go.kr/B551011/PhotoGalleryService1/galleryList1?serviceKey=918RE13GA7OY7ZEmUzApgbOeAcQoZ%2FaHsXWcqPAKQ9YNNPj83KOstRMRIUrCFIAcm9qj2R6b7NFZjp%2FYsYzJLg%3D%3D&numOfRows="+item_count+"&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A&_type=json",
           type:"get",
@@ -44,8 +47,7 @@
             alert("ajax실패");
           }
         })//ajax
-        alert($('#msearch').val());
-        let item_count = $('#msearch').val();
+        
         
 
       });
@@ -90,12 +92,12 @@
     <div class="wrapper">
       <form action="#" name="search" method="post">
         <select name="category" id="category">
-          <option value="0">전체</option>
-          <option value="title">제목</option>
-          <option value="content">내용</option>
+          <option value="galtitle">제목</option>
+          <option value="galPhotographyLocation">촬영장소</option>
+          <option value="galPhotographyMonth">촬영일</option>
         </select>
         <div class="title">
-          <input type="text" id='msearch' size="16">
+          <input type="text" id='gal_search' size="6">
         </div>
         <button type="button" id="mbtn"><i class="fas fa-search"></i></button>
       </form>

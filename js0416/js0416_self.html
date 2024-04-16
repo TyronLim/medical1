@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            $(window).on('scroll',function(){
+                $("#down").text($(this).scollTop())
+            })
+        })
+    </script>
+</head>
+<style>
+    section{width:100%; height:2000px;}
+    div{width:200px; height:200px; margin:0 auto; border:1px solid black; text-align:center;
+        position:fixed;}
+</style>
+<body>
+    <section>
+        <div>
+            
+            <p id="down"></p>
+            <p id="left"></p>
+        </div>
+    </section>
+    
+</body>
+</html>
