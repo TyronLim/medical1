@@ -1,8 +1,8 @@
 import requests
 # 웹에 접근해서 html 소스를 가져옴
-# res = requests.get('https://www.google.com/')
+res = requests.get('https://www.google.com/')
 # res = requests.get('https://www.daum.net/')
-res = requests.get('https://www.melon.com/')
+# res = requests.get('https://www.melon.com/')
 
 # 200 : 정상   / 403,404 : 페이지 없음  /  500 : 프로그램에러
 
