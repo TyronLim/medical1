@@ -14,13 +14,38 @@ s_2 = s_1.find_all('tr')
 # # print(s_3)
 # s_4 = s_3.find_next_siblings('tr')
 # print(s_4)
-
+# ----------------------------------------------------------
 for i in range(2,16):
     s_3 = s_2[i].find_all('td')
     if len(s_3)!=1:
         for j in range(12):
             print(s_3[j].text.strip(),end=" ")
         print()
+# ----------------------------------------------------------
+
+# c_1 = soup.find(attrs={"class":"box_type_l"})
+# # print(c_1)
+# c_2 = c_1.find("tr")
+# # print(c_2)
+# c_3 = c_2.find_next_sibling('tr')
+# # print(c_3)
+# c_4 = c_3.find_next_siblings('tr')
+# # print(c_4)
+# for i in range(13):
+#     c_5 = c_4[i].find_all("td")
+#     for j in range(12):
+#         # if len(c_5)!=1:
+#         print(c_5)
+
+    
+
+
+
+
+
+
+
+
 
 # s_3 = 
 # print(s_2)
