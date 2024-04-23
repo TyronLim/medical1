@@ -16,12 +16,12 @@ $(function(){
     // let total = [213,231,187,213,178,228,226,218,174,247];
     // let avg = [71,77,62.3,71,59.3,76,75.3,72.7,58,82.3];
     $.ajax({
-        url:"http://127.0.0.1:5500/js0417/json/stu_score.json",
+        url:"http://127.0.0.1:5500/z03_javascript_class/js0417/json/stu_score.json",
         type:"get",
         data:{},
         dataType:"json",
         success:function(data){
-            //alert('성공')
+            alert('성공')
             s_count = data.length;
             let htmlData = "";
             for (let i=0;i<data.length;i++){

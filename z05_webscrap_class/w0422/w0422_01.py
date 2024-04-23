@@ -41,11 +41,6 @@ for i in range(2,20):
         print('구매건 수 :',buycnt[3:])
         print('이미지 링크 :',img1)
         print('------------------------------')
-        # else :
-        #     continue
-
-
-
 
 # s_1 = soup.find_all('div',{'class':'section--itemcard'})
 # # print(s_1[2])
@@ -59,7 +54,6 @@ for i in range(2,20):
 # img = s_1[2].find(attrs={'class':'image--itemcard'})
 # img1 = img['src']
 # # print(img.attrs)
-
 
 # print('------------------------------')
 # print('이름 :',brand,name)
