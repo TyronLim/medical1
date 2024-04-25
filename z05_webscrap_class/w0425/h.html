@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        function mbtn(){
+            //alert('test');
+            alert('선택하신 날짜가'+$('#mdate').val()+'가 맞습니까?');
+
+        }
+    </script>
+</head>
+<body>
+    <h2>날짜</h2>
+    <form>
+        <input type="date" name="mdate" id="mdate">
+        <button type="button" onclick='mbtn()'>날짜전달</button>
+    </form>
+</body>
+</html>
