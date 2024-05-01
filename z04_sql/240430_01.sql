@@ -203,7 +203,7 @@ select rownum r, a.* from (select * from stu_score order by total desc) a;
 select r,b.* from (select rownum r, a.* from (select * from stu_score order by total desc) a) b where r>20 and r<=30 order by b.r;
 
 
-
+commit;
 
 
 
