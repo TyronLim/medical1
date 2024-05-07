@@ -10,6 +10,7 @@ headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/5
 url = "http://www.naver.com"
 browser = webdriver.Chrome()
 browser.get(url)
+main_window = browser.current_window_handle
 elem = browser.find_element(By.XPATH,'//*[@id="shortcutArea"]/ul/li[6]/a')
 elem.click()
 # 새 창으로
