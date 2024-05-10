@@ -1,10 +1,15 @@
 import pandas as pd
-df = pd.read_excel('score.xlsx',index_col='지원번호')
+df = pd.read_excel('score.xlsx',index_col='지원번호',skiprows=2,usecols='B:K')
 df.sort_index(inplace=True)
 df.to_csv('score.csv',encoding='utf-8-sig')
 df.to_csv('score.txt',encoding='utf-8')
 df.to_excel('score.xlsx')
+df.index_name='인구'
 
+import numpy as np
+df.iloc[2,4] = np.nan
+
+df.rename(columns={'이름':'name','학교':'school'},inplace=True)
 
 #    --------------행----------------------------둘 다---------------------------열---------------
 # df            df[0:1]                                                     '열이름'                    
