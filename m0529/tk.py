@@ -1,7 +1,7 @@
 from tkinter import *
 
 win = Tk()
-win.geometry('1000x500')
+win.geometry('412x915')
 
 win.title('temp')
 win.option_add('*Font','맑은고딕 25')
